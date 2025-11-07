@@ -2,16 +2,20 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: './',
   plugins: [react()],
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
+  },
   server: {
-    port: 3000,
-    host: true
+    port: 3000
   },
   build: {
-    target: 'esnext',
     outDir: 'dist',
-    assetsDir: 'assets',
-    minify: 'terser'
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: './index.html'
+      }
+    }
   }
 })
