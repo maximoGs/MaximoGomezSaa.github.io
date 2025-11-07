@@ -8,15 +8,15 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
+        display: ['"Orbitron"', 'sans-serif'],
         serif: ['"Playfair Display"', 'serif'],
-        'serif-alt': ['"Cormorant Garamond"', 'serif'],
         sans: ['"Montserrat"', 'sans-serif'],
       },
       colors: {
-        'brand-gold': '#D4AF37',
-        'brand-gold-light': '#FBF5B7',
+        'brand-violet': '#7B2CBF',
+        'brand-violet-light': '#9D4EDD',
         'brand-dark': '#0a0a0a',
-        'brand-parchment': '#fdf6e3',
+        'brand-light': '#fdf6e3',
       },
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',

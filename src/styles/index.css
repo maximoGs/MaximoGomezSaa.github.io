@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-  @apply bg-brand-dark text-brand-parchment font-sans;
+  @apply bg-brand-dark text-brand-light font-sans;
 }
 
-.text-gold-gradient {
-  @apply bg-gradient-to-br from-brand-gold-light to-brand-gold;
+.text-neon-gradient {
+  @apply bg-gradient-to-br from-brand-violet-light to-brand-violet;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -31,10 +31,10 @@ body {
   transform: rotateY(180deg);
 }
 
-.gold-glow {
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6), 0 0 5px rgba(251, 245, 183, 0.8);
+.neon-glow {
+  box-shadow: 0 0 15px rgba(157, 78, 221, 0.6), 0 0 5px rgba(123, 44, 191, 0.8);
 }
 
-.gold-glow-hard {
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.8), 0 0 10px rgba(251, 245, 183, 1);
+.neon-glow-hard {
+  box-shadow: 0 0 25px rgba(157, 78, 221, 0.8), 0 0 10px rgba(123, 44, 191, 1);
 }
