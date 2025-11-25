@@ -143,3 +143,47 @@ if (bookingForm) {
         window.location.href = `mailto:misterykprods@gmail.com?subject=${subject}&body=${body}`;
     });
 }
+
+// Audio Player Logic
+const playBtn = document.getElementById('play-btn');
+let isPlaying = false;
+
+if (playBtn) {
+    playBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
+        if (isPlaying) {
+            playBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+            // Simulate playing (would need actual Audio object)
+        } else {
+            playBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>';
+        }
+    });
+}
+
+// Lightbox Logic
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = lightbox.querySelector('.lightbox-content');
+const lightboxClose = lightbox.querySelector('.lightbox-close');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // For now, since we have placeholders, we'll just show a placeholder color
+        // In real usage, you'd get the src from an img tag
+        lightbox.classList.add('active');
+        lightboxImg.style.backgroundColor = '#1a1a1a'; // Placeholder
+        lightboxImg.src = ''; // Clear src
+    });
+});
+
+if (lightboxClose) {
+    lightboxClose.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+    });
+}
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+    }
+});
