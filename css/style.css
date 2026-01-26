@@ -332,11 +332,12 @@ p {
 /* --- VIDEO GRID --- */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Better responsiveness */
-    gap: 4rem;
-    max-width: 1400px;
-    /* Wider container */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* Wider Minimum */
+    gap: 3rem;
+    /* Slightly tighter gap */
+    max-width: 1500px;
+    /* Wider container for 4 items */
     margin: 0 auto;
     padding: 0 2rem;
 }
