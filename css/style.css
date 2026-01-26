@@ -116,7 +116,7 @@ p {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    group: transition;
+    transition: transform 0.3s ease;
 }
 
 .portal-icon {
@@ -167,109 +167,123 @@ p {
 }
 
 /* --- SECTIONS (EDITORIAL GRID) --- */
+/* --- SECTIONS (EDITORIAL GRID) --- */
 .section {
     position: relative;
     margin-bottom: var(--section-spacing);
-    padding: 2rem 0;
+    padding: 4rem 0;
+    /* More vertical breathing room */
     width: 100%;
-    max-width: 1400px;
-    /* Wider for editorial feel */
+    max-width: 1600px;
+    /* Ultra wide for impact */
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+    /* Prevent horizontal scroll from overlaps */
 }
 
 .editorial-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 0.8fr 1.2fr;
+    /* Asymmetric grid: Content narrower, Visual wider */
+    gap: 6rem;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 
 .editorial-grid.reverse {
+    grid-template-columns: 1.2fr 0.8fr;
     direction: rtl;
-    /* Quick way to swap columns visually */
 }
 
 .editorial-grid.reverse>* {
     direction: ltr;
-    /* Reset text direction */
 }
 
 .about-content {
     background: transparent;
-    /* Remove the heavy box */
     border: none;
-    padding: 0;
+    padding: 2rem;
     text-align: left;
-    /* Magazine style */
     position: relative;
-    box-shadow: none;
+    z-index: 2;
+    /* Text above image */
 }
 
-.about-content::after {
-    display: none;
-    /* Remove duplicate borders */
-}
-
-/* Decorative vertical line for editorial feel */
 .about-content::before {
     content: '';
     position: absolute;
-    left: -20px;
+    left: 0;
     top: 0;
-    width: 2px;
+    width: 1px;
     height: 100%;
     background: linear-gradient(to bottom, var(--accent-gold), transparent);
+    opacity: 0.5;
 }
 
 .section-title {
-    font-size: clamp(3rem, 6vw, 5rem);
+    font-size: clamp(4rem, 8vw, 9rem);
+    /* Massive */
     text-align: left;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     border-bottom: none;
-    line-height: 0.9;
+    line-height: 0.8;
     padding-bottom: 0;
-    transform: translateX(-50px);
-    /* Overlap effect */
+    margin-left: -4rem;
+    /* Overlap nicely */
     z-index: 10;
     position: relative;
-    text-shadow: 20px 0 50px rgba(0, 0, 0, 0.8);
+    color: var(--accent-red-bright);
+    /* Deep Red */
+    text-shadow:
+        -1px -1px 0 var(--accent-gold),
+        1px -1px 0 var(--accent-gold),
+        -1px 1px 0 var(--accent-gold),
+        1px 1px 0 var(--accent-gold);
+    /* Gold Outline effect */
+    mix-blend-mode: normal;
 }
 
 .section-image {
     width: 100%;
-    height: 600px;
+    height: 80vh;
+    /* Takes up most of the screen height */
+    max-height: 900px;
     object-fit: cover;
-    filter: brightness(0.8) sepia(20%);
-    border: 1px solid var(--accent-red);
-    transition: all 0.5s ease;
-    box-shadow: 20px 20px 0px rgba(5, 0, 0, 0.5);
+    filter: brightness(0.6) sepia(30%) contrast(1.2);
+    /* Cinematic dark look */
+    border: 1px solid var(--accent-gold-dim);
+    transition: all 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
 }
 
 .section-image:hover {
-    filter: brightness(1) sepia(0%);
-    transform: scale(1.02);
+    filter: brightness(1) sepia(0%) contrast(1.1);
+    transform: scale(1.01);
+    border-color: var(--accent-gold-bright);
 }
 
 /* Typography refinements */
 h3 {
-    font-size: 1.5rem;
-    color: var(--accent-red-bright);
-    letter-spacing: 0.2em;
+    font-size: 1.2rem;
+    color: var(--accent-gold);
+    letter-spacing: 0.4em;
     text-transform: uppercase;
-    margin-bottom: 2rem;
-    border-bottom: 1px solid var(--accent-red);
+    margin-bottom: 3rem;
+    border-top: 1px solid var(--accent-red);
     display: inline-block;
-    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    margin-left: 0.5rem;
 }
 
 p {
-    font-size: 1.25rem;
-    /* Larger body text for readability */
-    line-height: 1.8;
-    color: #ccc;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #d0d0d0;
     margin-bottom: 2rem;
+    font-weight: 300;
+    max-width: 600px;
+    /* Readable line length */
 }
 
 /* --- HERO REFINEMENTS --- */
