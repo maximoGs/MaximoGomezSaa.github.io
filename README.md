@@ -1,42 +1,16 @@
-# CHANO SMOVIR - Official Portfolio
+# React + Vite
 
-This is the official portfolio website for DJ Chano Smovir, designed to be an immersive digital experience reflecting his "Underground Elegant" aesthetic.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- **Immersive Vaporwave Design**: Pure CSS infinite perspective grid background.
-- **Interactive Gallery Slider**: Custom-built carousel with touch support and smooth transitions.
-- **Live Sets Video Section**: Responsive video compilation area.
-- **Audio Player**: Persistent background music with custom controls.
-- **Bilingual Support**: Instant English/Spanish toggle.
-- **Responsive Layout**: Optimized for all devices, from mobile phones to desktops.
-- **Social Portals**: Interactive links to Instagram, SoundCloud, TikTok, and YouTube.
-- **Gallery**: Visual showcase of the artist.
-- **Booking System**: Direct mailto integration for booking inquiries (sends to `misterykprods@gmail.com`).
-- **Responsive**: Fully optimized for mobile and desktop.
+Currently, two official plugins are available:
 
-## 🛠 Tech Stack
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- **HTML5**: Semantic structure.
-- **CSS3**: Custom animations, glassmorphism, and responsive grid layouts.
-- **Vanilla JavaScript**: Particle system and form logic.
-- **No Frameworks**: Zero dependencies for maximum performance and easy deployment.
+## React Compiler
 
-## 🚀 Deployment
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-This project is designed for **GitHub Pages**.
+## Expanding the ESLint configuration
 
-1. Push changes to the `master` branch.
-2. The GitHub Action `Deploy static content to Pages` will automatically build and deploy the site.
-3. Access the live site at: `https://maximoGs.github.io/ChanoSmovir.github.io/` (or your custom domain).
-
-## 📁 Structure
-
-- `index.html`: Main entry point.
-- `css/style.css`: All styles and animations.
-- `js/main.js`: Particle animation and interaction logic.
-- `assets/`: Directory for images and other static assets.
-
-## 📧 Contact
-
-**Management & Design**: Mysterik Producciones
-**Booking**: misterykprods@gmail.com
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
