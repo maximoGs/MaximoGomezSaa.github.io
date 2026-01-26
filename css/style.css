@@ -329,6 +329,37 @@ p {
     padding-bottom: 1rem;
 }
 
+/* --- VIDEO GRID --- */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.video-item {
+    background: transparent;
+    border: 1px solid var(--accent-gold-dim);
+    padding: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.video-item:hover {
+    border-color: var(--accent-gold-bright);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: rgba(88, 8, 8, 0.1);
+}
+
+.video-caption {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.2em;
+    color: var(--accent-gold);
+}
+
 /* --- GALLERY --- */
 .gallery-slider-container {
     max-width: 1000px;

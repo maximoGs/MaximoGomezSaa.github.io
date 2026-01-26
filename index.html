@@ -29,10 +29,20 @@
     <main class="container">
         <!-- Hero Section -->
         <header class="hero fade-in">
-            <h1 class="glitch" data-text="MYSTERIK">MYSTERIK</h1>
-            <p class="subtitle">DONDE LA ESTRATEGIA ENCUENTRA LO INVISIBLE</p>
+            <h1 class="metallic-text" data-i18n="hero_title">MAXIMO GOMEZ SAA</h1>
+            <p class="subtitle" data-i18n="hero_subtitle">PRODUCER • ARTIST • CEO MYSTERIK PRODUCCIONES</p>
 
             <div class="portals">
+                <a href="#story" class="portal-link" aria-label="The Story">
+                    <div class="portal-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9" />
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                        </svg>
+                    </div>
+                    <span class="portal-label" data-i18n="nav_story">THE STORY</span>
+                </a>
                 <a href="#emperor" class="portal-link" aria-label="Management">
                     <div class="portal-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -42,7 +52,7 @@
                             <path d="M2 12h20" />
                         </svg>
                     </div>
-                    <span class="portal-label">THE EMPEROR</span>
+                    <span class="portal-label" data-i18n="nav_emperor">THE EMPEROR</span>
                 </a>
                 <a href="#alchemist" class="portal-link" aria-label="Mendoza Hub">
                     <div class="portal-icon">
@@ -52,7 +62,7 @@
                             <path d="M12 21.31l-5.74-5.88 5.74-5.88 5.74 5.88z" />
                         </svg>
                     </div>
-                    <span class="portal-label">THE ALCHEMIST</span>
+                    <span class="portal-label" data-i18n="nav_alchemist">THE ALCHEMIST</span>
                 </a>
                 <a href="#star" class="portal-link" aria-label="Media">
                     <div class="portal-icon">
@@ -62,30 +72,53 @@
                                 points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                         </svg>
                     </div>
-                    <span class="portal-label">THE STAR</span>
+                    <span class="portal-label" data-i18n="nav_star">THE STAR</span>
                 </a>
             </div>
         </header>
+
+        <!-- THE STORY (New Section) -->
+        <section class="section fade-in" id="story">
+            <div class="editorial-grid reverse">
+                <div class="about-content">
+                    <h2 class="section-title" data-i18n="story_title">THE<br>STORY</h2>
+                    <h3 data-i18n="story_subtitle">FROM THE SHADOWS<br>TO THE SPOTLIGHT</h3>
+                    <p data-i18n="story_p1">
+                        Mi viaje comenzó en el underground, donde el arte no se explica, se vive.
+                        Esa crudeza me enseñó que la verdadera elegancia reside en la autenticidad radical.
+                    </p>
+                    <p data-i18n="story_p2">
+                        Hoy, como CEO de <span class="highlight">Mysterik Producciones</span>, canalizo esa energía
+                        visceral en estrategias corporativas y producciones de alto nivel.
+                        No hemos olvidado el origen; lo hemos refinado en oro.
+                    </p>
+                </div>
+                <div class="visual-content">
+                    <!-- Placeholder for Portrait/Story -->
+                    <img src="assets/uploaded_image_0_1769399872136.png" alt="Maximo Portrait" class="section-image"
+                        style="filter: brightness(0.9) contrast(1.1);">
+                </div>
+            </div>
+        </section>
 
         <!-- THE EMPEROR (Project Management) -->
         <section class="section fade-in" id="emperor">
             <div class="editorial-grid">
                 <div class="about-content">
-                    <h2 class="section-title">THE<br>EMPEROR</h2>
-                    <h3>PROJECT MANAGEMENT<br>& STRATEGY</h3>
-                    <p>
+                    <h2 class="section-title" data-i18n="emperor_title">THE<br>EMPEROR</h2>
+                    <h3 data-i18n="emperor_subtitle">PROJECT MANAGEMENT<br>& STRATEGY</h3>
+                    <p data-i18n="emperor_p1">
                         Liderazgo no es solo dirigir; es <span class="highlight">percibir</span>.
                         En un mundo saturado de ruido, la verdadera gestión ejecutiva requiere visión para revelar las
                         capas ocultas de cada negocio.
                     </p>
-                    <p>
+                    <p data-i18n="emperor_p2">
                         Como CEO, mi enfoque de <strong>Global Performance</strong> fusiona la logística de precisión
                         con una supervisión creativa implacable.
                         Transformamos el caos en experiencias calibradas.
                     </p>
                 </div>
                 <div class="visual-content">
-                    <!-- Placeholder: Use uploaded 'Vision' image or similar -->
                     <img src="assets/uploaded_image_2_1769394508442.png" alt="Visionary Leadership"
                         class="section-image">
                 </div>
@@ -96,22 +129,21 @@
         <section class="section fade-in" id="alchemist">
             <div class="editorial-grid reverse">
                 <div class="about-content">
-                    <h2 class="section-title">THE<br>ALCHEMIST</h2>
-                    <h3>MENDOZA<br>PRODUCTION HUB</h3>
-                    <p>
+                    <h2 class="section-title" data-i18n="alchemist_title">THE<br>ALCHEMIST</h2>
+                    <h3 data-i18n="alchemist_subtitle">MENDOZA<br>PRODUCTION HUB</h3>
+                    <p data-i18n="alchemist_p1">
                         Mendoza es tierra de alquimia: sol, agua y vidrio. Con 8 años dominando la logística en bodegas
                         de élite
                         (<span class="highlight">Martino Wines, Huentala, Bodega Centenario</span>), somos su
                         <em>fixer</em> local con clase mundial.
                     </p>
-                    <p>
+                    <p data-i18n="alchemist_p2">
                         Ofrecemos a inversores internacionales la llave de la ciudad:
                         infraestructura, contactos y la capacidad de materializar producciones en el corazón de los
                         Andes.
                     </p>
                 </div>
                 <div class="visual-content">
-                    <!-- Placeholder: Use 'Mountain' or Event image -->
                     <img src="assets/4.jpg" alt="Mendoza Event Logistics" class="section-image">
                 </div>
             </div>
@@ -121,29 +153,51 @@
         <section class="section fade-in" id="star">
             <div class="editorial-grid">
                 <div class="about-content">
-                    <h2 class="section-title">THE<br>STAR</h2>
-                    <h3>MEDIA<br>& NARRATIVE</h3>
-                    <p>
+                    <h2 class="section-title" data-i18n="star_title">THE<br>STAR</h2>
+                    <h3 data-i18n="star_subtitle">MEDIA<br>& NARRATIVE</h3>
+                    <p data-i18n="star_p1">
                         Contar historias es el ritual moderno. Como actor y director artístico, utilizo el tarot y la
                         performance
                         como herramientas de introspección para la audiencia.
                     </p>
-                    <p>
+                    <p data-i18n="star_p2">
                         Con proyección en <span class="highlight">Miami, España y Buenos Aires</span>, diseñamos
                         narrativas audiovisuales
                         que conectan continentes.
                     </p>
                 </div>
                 <div class="visual-content">
-                    <!-- Using the portrait for 'The Star' -->
                     <img src="assets/uploaded_image_1_1769394508442.png" alt="Acting & Narrative" class="section-image">
                 </div>
             </div>
 
-            <!-- Gallery Grid Below -->
-            <div style="margin-top: 4rem; text-align: center;">
-                <h3 style="display:inline-block; border-bottom: 1px solid var(--accent-gold); margin-bottom: 2rem;">
-                    VISUAL ARCHIVE</h3>
+            <!-- Video Grid -->
+            <div style="margin-top: 6rem; text-align: center;">
+                <h3 style="display:inline-block; border-bottom: 1px solid var(--accent-gold); margin-bottom: 3rem;"
+                    data-i18n="video_gallery_title">CINEMATIC REELS</h3>
+                <div class="video-grid">
+                    <!-- Placeholder YouTube Embeds -->
+                    <div class="video-item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Acting Reel" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p class="video-caption">ACTING REEL 2024</p>
+                    </div>
+                    <div class="video-item">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="Production Highlights" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <p class="video-caption">PRODUCTION HIGHLIGHTS</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo Gallery Slider -->
+            <div style="margin-top: 6rem; text-align: center;">
+                <h3 style="display:inline-block; border-bottom: 1px solid var(--accent-gold); margin-bottom: 2rem;"
+                    data-i18n="photo_gallery_title">VISUAL ARCHIVE</h3>
                 <div class="gallery-slider-container">
                     <button class="slider-nav prev" aria-label="Previous Slide">❮</button>
                     <div class="gallery-track">
