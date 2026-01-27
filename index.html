@@ -175,15 +175,20 @@
             </div>
 
             <!-- Video Grid -->
-            <div style="margin-top: 6rem; text-align: center;">
-                <h3 style="display:inline-block; border-bottom: 1px solid var(--accent-gold); margin-bottom: 3rem;"
-                    data-i18n="video_gallery_title">CINEMATIC REELS</h3>
+            <div class="video-section-container">
+                <h3 class="video-section-header" data-i18n="video_gallery_title">CINEMATIC REELS</h3>
                 <div class="video-grid">
                     <!-- Acting -->
                     <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Acting Reel"
-                                allowfullscreen></iframe>
+                        <div class="video-wrapper" data-video-id="dQw4w9WgXcQ">
+                            <div class="video-placeholder"
+                                style="background-image: url('assets/abstract_light.png'); filter: brightness(0.5);">
+                            </div>
+                            <div class="play-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="video-details">
                             <h4 class="video-title">ACTING REEL</h4>
@@ -192,9 +197,15 @@
                     </div>
                     <!-- Directing -->
                     <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Directing Portfolio"
-                                allowfullscreen></iframe>
+                        <div class="video-wrapper" data-video-id="dQw4w9WgXcQ">
+                            <div class="video-placeholder"
+                                style="background-image: url('assets/production_set.png'); filter: brightness(0.5);">
+                            </div>
+                            <div class="play-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="video-details">
                             <h4 class="video-title">DIRECTING</h4>
@@ -203,9 +214,15 @@
                     </div>
                     <!-- Production -->
                     <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Key Productions"
-                                allowfullscreen></iframe>
+                        <div class="video-wrapper" data-video-id="dQw4w9WgXcQ">
+                            <div class="video-placeholder"
+                                style="background-image: url('assets/ethereal_lens.png'); filter: brightness(0.5);">
+                            </div>
+                            <div class="play-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="video-details">
                             <h4 class="video-title">PRODUCTION</h4>
@@ -214,9 +231,15 @@
                     </div>
                     <!-- Immersive -->
                     <div class="video-item">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Immersive Events"
-                                allowfullscreen></iframe>
+                        <div class="video-wrapper" data-video-id="dQw4w9WgXcQ">
+                            <div class="video-placeholder"
+                                style="background-image: url('assets/uploaded_image_0_1769394508442.png'); filter: brightness(0.5);">
+                            </div>
+                            <div class="play-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
                         </div>
                         <div class="video-details">
                             <h4 class="video-title">IMMERSIVE</h4>
@@ -227,9 +250,8 @@
             </div>
 
             <!-- Photo Gallery Slider -->
-            <div style="margin-top: 6rem; text-align: center;">
-                <h3 style="display:inline-block; border-bottom: 1px solid var(--accent-gold); margin-bottom: 2rem;"
-                    data-i18n="photo_gallery_title">VISUAL ARCHIVE</h3>
+            <div class="gallery-section-container">
+                <h3 class="gallery-section-title" data-i18n="photo_gallery_title">VISUAL ARCHIVE</h3>
                 <div class="gallery-slider-container">
                     <button class="slider-nav prev" aria-label="Previous Slide">❮</button>
                     <div class="gallery-track">

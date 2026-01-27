@@ -167,4 +167,30 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.section, .hero').forEach(section => {
         observer.observe(section);
     });
+
+    // --- Video Facade Logic ---
+    const videoWrappers = document.querySelectorAll('.video-wrapper');
+    
+    videoWrappers.forEach(wrapper => {
+        wrapper.addEventListener('click', () => {
+            const videoId = wrapper.getAttribute('data-video-id');
+            if (videoId && !wrapper.querySelector('iframe')) {
+                // Create iframe
+                const iframe = document.createElement('iframe');
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+                iframe.title = "YouTube Video";
+                iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+                iframe.allowFullscreen = true;
+                
+                // Add to wrapper and hide placeholder stuff
+                wrapper.appendChild(iframe);
+                
+                const placeholder = wrapper.querySelector('.video-placeholder');
+                const playBtn = wrapper.querySelector('.play-button');
+                
+                if (placeholder) placeholder.style.display = 'none';
+                if (playBtn) playBtn.style.display = 'none';
+            }
+        });
+    });
 });
