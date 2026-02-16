@@ -293,12 +293,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 wrapper.appendChild(iframe);
                 
-                const placeholder = wrapper.querySelector('.video-placeholder');
+                const thumb = wrapper.querySelector('.video-thumb');
                 const playBtn = wrapper.querySelector('.play-button');
+                const badge = wrapper.querySelector('.video-badge');
                 
-                if (placeholder) placeholder.style.opacity = '0';
+                if (thumb) thumb.style.opacity = '0';
                 if (playBtn) playBtn.style.opacity = '0';
                 if (playBtn) playBtn.style.pointerEvents = 'none';
+                if (badge) badge.style.opacity = '0';
             }
         };
 

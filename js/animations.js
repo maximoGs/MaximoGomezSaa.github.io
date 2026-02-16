@@ -81,15 +81,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- 4. VIDEO GRID STAGGER ---
-    gsap.from('.video-item', {
-        scrollTrigger: {
-            trigger: '.video-grid',
-            start: "top 85%"
-        },
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.2, // Staggered entrance
-        ease: "power2.out"
-    });
+    const videoItems = document.querySelectorAll('.video-item');
+    if (videoItems.length) {
+        gsap.fromTo(videoItems, 
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: '.video-grid',
+                    start: "top 95%"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.7,
+                stagger: 0.15,
+                ease: "power2.out",
+                clearProps: "opacity,transform" // clean up after animation
+            }
+        );
+    }
 });
