@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // --- Custom Cursor Logic (Kept mostly purely visual CSS/JS interaction) ---
+    // --- Custom Cursor Logic ---
     const cursorDot = document.createElement('div');
     cursorDot.classList.add('cursor-dot');
     const cursorOutline = document.createElement('div');
     cursorOutline.classList.add('cursor-outline');
     
-    // Only add if not mobile (simple check)
     if (window.matchMedia("(min-width: 768px)").matches) {
         document.body.appendChild(cursorDot);
         document.body.appendChild(cursorOutline);
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }, { duration: 500, fill: "forwards" });
         });
 
-        // Hover Effects
         const links = document.querySelectorAll('a, button, .section-image, iframe');
         links.forEach(link => {
             link.addEventListener('mouseenter', () => {
@@ -99,7 +97,30 @@ document.addEventListener('DOMContentLoaded', () => {
             star_p2: "Con proyección en <span class='highlight'>Miami, España y Buenos Aires</span>, diseñamos narrativas audiovisuales que conectan continentes.",
 
             video_gallery_title: "REELS CINEMATOGRÁFICOS",
+            video_gallery_subtitle: "Una selección curada de nuestras mejores producciones audiovisuales",
+            video_title_1: "ACTUACIÓN",
+            video_desc_1: "Performance Dramática 2024",
+            video_title_2: "DIRECCIÓN",
+            video_desc_2: "Visión & Control Narrativo",
+            video_title_3: "PRODUCCIÓN",
+            video_desc_3: "Logística Ejecutiva Highlights",
+            video_title_4: "INMERSIVO",
+            video_desc_4: "Experiencias de Eventos en Vivo",
+            video_title_5: "CORTO CINEMATOGRÁFICO",
+            video_desc_5: "Narrativa Experimental",
+            video_title_6: "DETRÁS DE ESCENA",
+            video_desc_6: "Proceso Creativo & Making Of",
+
             photo_gallery_title: "ARCHIVO VISUAL",
+
+            contact_title: "PONETE EN<br>CONTACTO",
+            contact_subtitle: "Creemos algo extraordinario juntos.",
+            contact_label_name: "NOMBRE",
+            contact_label_email: "EMAIL",
+            contact_label_subject: "ASUNTO",
+            contact_label_message: "MENSAJE",
+            contact_btn_send: "ENVIAR MENSAJE",
+
             footer_text: "Gestión y Diseño por Mysterik Producciones"
         },
         en: {
@@ -131,27 +152,112 @@ document.addEventListener('DOMContentLoaded', () => {
             star_p2: "With projection in <span class='highlight'>Miami, Spain, and Buenos Aires</span>, we design audiovisual narratives that connect continents.",
 
             video_gallery_title: "CINEMATIC REELS",
+            video_gallery_subtitle: "A curated selection of our finest audiovisual productions",
+            video_title_1: "ACTING REEL",
+            video_desc_1: "Dramatic Performance 2024",
+            video_title_2: "DIRECTING",
+            video_desc_2: "Vision & Narrative Control",
+            video_title_3: "PRODUCTION",
+            video_desc_3: "Executive Logistics Highlights",
+            video_title_4: "IMMERSIVE",
+            video_desc_4: "Live Event Experiences",
+            video_title_5: "CINEMATIC SHORT",
+            video_desc_5: "Experimental Narrative Film",
+            video_title_6: "BEHIND THE SCENES",
+            video_desc_6: "Creative Process & Making Of",
+
             photo_gallery_title: "VISUAL ARCHIVE",
+
+            contact_title: "GET IN<br>TOUCH",
+            contact_subtitle: "Let's create something extraordinary together.",
+            contact_label_name: "NAME",
+            contact_label_email: "EMAIL",
+            contact_label_subject: "SUBJECT",
+            contact_label_message: "MESSAGE",
+            contact_btn_send: "SEND MESSAGE",
+
             footer_text: "Management & Design by Mysterik Producciones"
+        },
+        pt: {
+            hero_title: "MAXIMO GOMEZ SAA",
+            hero_subtitle: "PRODUTOR • ARTISTA • CEO MYSTERIK PRODUCCIONES",
+            nav_story: "A HISTÓRIA",
+            nav_emperor: "O IMPERADOR",
+            nav_alchemist: "O ALQUIMISTA",
+            nav_star: "A ESTRELA",
+            
+            story_title: "A<br>HISTÓRIA",
+            story_subtitle: "DAS SOMBRAS<br>AOS HOLOFOTES",
+            story_p1: "Minha jornada começou no underground, onde a arte não se explica, se vive. Essa crueza me ensinou que a verdadeira elegância reside na autenticidade radical.",
+            story_p2: "Hoje, como CEO da <span class='highlight'>Mysterik Producciones</span>, canalizo essa energia visceral em estratégias corporativas e produções de alto nível. Não esquecemos a origem; a refinamos em ouro.",
+
+            emperor_title: "O<br>IMPERADOR",
+            emperor_subtitle: "GESTÃO DE PROJETOS<br>& ESTRATÉGIA",
+            emperor_p1: "Liderança não é apenas dirigir; é <span class='highlight'>perceber</span>. Em um mundo saturado de ruído, a verdadeira gestão executiva requer visão para revelar as camadas ocultas de cada negócio.",
+            emperor_p2: "Como CEO, minha abordagem de <strong>Performance Global</strong> funde a logística de precisão com uma supervisão criativa implacável. Transformamos o caos em experiências calibradas.",
+
+            alchemist_title: "O<br>ALQUIMISTA",
+            alchemist_subtitle: "HUB DE PRODUÇÃO<br>MENDOZA",
+            alchemist_p1: "Mendoza é terra de alquimia: sol, água e vidro. Com 8 anos dominando a logística em vinícolas de elite (<span class='highlight'>Martino Wines, Huentala, Bodega Centenario</span>), somos seu <em>fixer</em> local de classe mundial.",
+            alchemist_p2: "Oferecemos a investidores internacionais a chave da cidade: infraestrutura, contatos e a capacidade de materializar produções no coração dos Andes.",
+
+            star_title: "A<br>ESTRELA",
+            star_subtitle: "MÍDIA<br>& NARRATIVA",
+            star_p1: "Contar histórias é o ritual moderno. Como ator e diretor artístico, utilizo o tarô e a performance como ferramentas de introspecção para o público.",
+            star_p2: "Com projeção em <span class='highlight'>Miami, Espanha e Buenos Aires</span>, desenhamos narrativas audiovisuais que conectam continentes.",
+
+            video_gallery_title: "REELS CINEMATOGRÁFICOS",
+            video_gallery_subtitle: "Uma seleção curada das nossas melhores produções audiovisuais",
+            video_title_1: "ATUAÇÃO",
+            video_desc_1: "Performance Dramática 2024",
+            video_title_2: "DIREÇÃO",
+            video_desc_2: "Visão & Controle Narrativo",
+            video_title_3: "PRODUÇÃO",
+            video_desc_3: "Destaques de Logística Executiva",
+            video_title_4: "IMERSIVO",
+            video_desc_4: "Experiências de Eventos ao Vivo",
+            video_title_5: "CURTA CINEMATOGRÁFICO",
+            video_desc_5: "Narrativa Experimental",
+            video_title_6: "BASTIDORES",
+            video_desc_6: "Processo Criativo & Making Of",
+
+            photo_gallery_title: "ARQUIVO VISUAL",
+
+            contact_title: "ENTRE EM<br>CONTATO",
+            contact_subtitle: "Vamos criar algo extraordinário juntos.",
+            contact_label_name: "NOME",
+            contact_label_email: "EMAIL",
+            contact_label_subject: "ASSUNTO",
+            contact_label_message: "MENSAGEM",
+            contact_btn_send: "ENVIAR MENSAGEM",
+
+            footer_text: "Gestão e Design por Mysterik Producciones"
         }
     };
 
     function updateLanguage(lang) {
         currentLang = lang;
         langOptions.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
+        document.documentElement.lang = lang;
 
         document.querySelectorAll('[data-i18n]').forEach(element => {
             const key = element.getAttribute('data-i18n');
-            if (translations[lang][key]) {
+            if (translations[lang] && translations[lang][key]) {
                 element.innerHTML = translations[lang][key];
             }
         });
     }
 
-    if (langToggle) {
-        langToggle.addEventListener('click', () => {
-            const newLang = currentLang === 'es' ? 'en' : 'es';
-            updateLanguage(newLang);
+    // Each language option is clickable directly
+    if (langOptions.length) {
+        langOptions.forEach(opt => {
+            opt.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const lang = opt.dataset.lang;
+                if (lang !== currentLang) {
+                    updateLanguage(lang);
+                }
+            });
         });
     }
 
@@ -172,24 +278,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoWrappers = document.querySelectorAll('.video-wrapper');
     
     videoWrappers.forEach(wrapper => {
-        wrapper.addEventListener('click', () => {
+        wrapper.setAttribute('role', 'button');
+        wrapper.setAttribute('tabindex', '0');
+        wrapper.setAttribute('aria-label', 'Play Video');
+
+        const loadVideo = () => {
             const videoId = wrapper.getAttribute('data-video-id');
             if (videoId && !wrapper.querySelector('iframe')) {
-                // Create iframe
                 const iframe = document.createElement('iframe');
                 iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
                 iframe.title = "YouTube Video";
                 iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
                 iframe.allowFullscreen = true;
                 
-                // Add to wrapper and hide placeholder stuff
                 wrapper.appendChild(iframe);
                 
                 const placeholder = wrapper.querySelector('.video-placeholder');
                 const playBtn = wrapper.querySelector('.play-button');
                 
-                if (placeholder) placeholder.style.display = 'none';
-                if (playBtn) playBtn.style.display = 'none';
+                if (placeholder) placeholder.style.opacity = '0';
+                if (playBtn) playBtn.style.opacity = '0';
+                if (playBtn) playBtn.style.pointerEvents = 'none';
+            }
+        };
+
+        wrapper.addEventListener('click', loadVideo);
+        
+        wrapper.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                loadVideo();
             }
         });
     });

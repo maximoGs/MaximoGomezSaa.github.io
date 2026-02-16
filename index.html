@@ -23,11 +23,12 @@
 </head>
 
 <body>
-    <!-- Language Toggle -->
-    <button id="lang-toggle" class="lang-toggle" aria-label="Switch Language">
+    <!-- Language Toggle (3 options) -->
+    <div id="lang-toggle" class="lang-toggle" role="group" aria-label="Select Language">
         <span class="lang-option active" data-lang="es">ES</span>
         <span class="lang-option" data-lang="en">EN</span>
-    </button>
+        <span class="lang-option" data-lang="pt">PT</span>
+    </div>
 
     <main class="container">
         <!-- Hero Section -->
@@ -80,7 +81,7 @@
             </div>
         </header>
 
-        <!-- THE STORY (New Section) -->
+        <!-- THE STORY -->
         <section class="section fade-in" id="story">
             <div class="editorial-grid reverse">
                 <div class="about-content">
@@ -97,14 +98,13 @@
                     </p>
                 </div>
                 <div class="visual-content">
-                    <!-- Placeholder for Portrait/Story -->
                     <img src="assets/uploaded_image_1_1769394508442.png" alt="Maximo Portrait" class="section-image"
                         style="filter: brightness(0.9) contrast(1.1);">
                 </div>
             </div>
         </section>
 
-        <!-- THE EMPEROR (Project Management) -->
+        <!-- THE EMPEROR -->
         <section class="section fade-in" id="emperor">
             <div class="editorial-grid">
                 <div class="about-content">
@@ -128,7 +128,7 @@
             </div>
         </section>
 
-        <!-- THE ALCHEMIST (Mendoza Hub) -->
+        <!-- THE ALCHEMIST -->
         <section class="section fade-in" id="alchemist">
             <div class="editorial-grid reverse">
                 <div class="about-content">
@@ -152,7 +152,7 @@
             </div>
         </section>
 
-        <!-- THE STAR (Media & Acting) -->
+        <!-- THE STAR -->
         <section class="section fade-in" id="star">
             <div class="editorial-grid">
                 <div class="about-content">
@@ -174,76 +174,118 @@
                 </div>
             </div>
 
-            <!-- Video Grid -->
+            <!-- Video Grid — 6 Videos, 3×2 -->
             <div class="video-section-container">
                 <h3 class="video-section-header" data-i18n="video_gallery_title">CINEMATIC REELS</h3>
+                <p class="video-section-subtitle" data-i18n="video_gallery_subtitle">A curated selection of our finest
+                    audiovisual productions</p>
                 <div class="video-grid">
-                    <!-- Acting -->
+                    <!-- 1. Acting Reel -->
                     <div class="video-item">
-                        <div class="video-wrapper" data-video-id="dQw4w9WgXcQ">
+                        <div class="video-wrapper" data-video-id="LXb3EKWsInQ">
                             <div class="video-placeholder"
-                                style="background-image: url('assets/abstract_light.png'); filter: brightness(0.5);">
+                                style="background-image: url('https://img.youtube.com/vi/LXb3EKWsInQ/hqdefault.jpg');">
                             </div>
                             <div class="play-button">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
                             </div>
+                            <span class="video-badge">01</span>
                         </div>
                         <div class="video-details">
-                            <h4 class="video-title">ACTING REEL</h4>
-                            <p class="video-desc">Dramatic Performance 2024</p>
+                            <h4 class="video-title" data-i18n="video_title_1">ACTING REEL</h4>
+                            <p class="video-desc" data-i18n="video_desc_1">Dramatic Performance 2024</p>
                         </div>
                     </div>
-                    <!-- Directing -->
+                    <!-- 2. Directing -->
                     <div class="video-item">
                         <div class="video-wrapper" data-video-id="dQw4w9WgXcQ">
                             <div class="video-placeholder"
-                                style="background-image: url('assets/production_set.png'); filter: brightness(0.5);">
+                                style="background-image: url('https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg');">
                             </div>
                             <div class="play-button">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
                             </div>
+                            <span class="video-badge">02</span>
                         </div>
                         <div class="video-details">
-                            <h4 class="video-title">DIRECTING</h4>
-                            <p class="video-desc">Vision & Narrative Control</p>
+                            <h4 class="video-title" data-i18n="video_title_2">DIRECTING</h4>
+                            <p class="video-desc" data-i18n="video_desc_2">Vision & Narrative Control</p>
                         </div>
                     </div>
-                    <!-- Production -->
+                    <!-- 3. Production -->
                     <div class="video-item">
-                        <div class="video-wrapper" data-video-id="dQw4w9WgXcQ">
+                        <div class="video-wrapper" data-video-id="YQHsXMglC9A">
                             <div class="video-placeholder"
-                                style="background-image: url('assets/ethereal_lens.png'); filter: brightness(0.5);">
+                                style="background-image: url('https://img.youtube.com/vi/YQHsXMglC9A/hqdefault.jpg');">
                             </div>
                             <div class="play-button">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
                             </div>
+                            <span class="video-badge">03</span>
                         </div>
                         <div class="video-details">
-                            <h4 class="video-title">PRODUCTION</h4>
-                            <p class="video-desc">Executive Logistics Highlights</p>
+                            <h4 class="video-title" data-i18n="video_title_3">PRODUCTION</h4>
+                            <p class="video-desc" data-i18n="video_desc_3">Executive Logistics Highlights</p>
                         </div>
                     </div>
-                    <!-- Immersive -->
+                    <!-- 4. Immersive Events -->
                     <div class="video-item">
-                        <div class="video-wrapper" data-video-id="dQw4w9WgXcQ">
+                        <div class="video-wrapper" data-video-id="9bZkp7q19f0">
                             <div class="video-placeholder"
-                                style="background-image: url('assets/uploaded_image_0_1769394508442.png'); filter: brightness(0.5);">
+                                style="background-image: url('https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg');">
                             </div>
                             <div class="play-button">
                                 <svg viewBox="0 0 24 24">
                                     <path d="M8 5v14l11-7z" />
                                 </svg>
                             </div>
+                            <span class="video-badge">04</span>
                         </div>
                         <div class="video-details">
-                            <h4 class="video-title">IMMERSIVE</h4>
-                            <p class="video-desc">Live Event Experiences</p>
+                            <h4 class="video-title" data-i18n="video_title_4">IMMERSIVE</h4>
+                            <p class="video-desc" data-i18n="video_desc_4">Live Event Experiences</p>
+                        </div>
+                    </div>
+                    <!-- 5. Cinematic Short -->
+                    <div class="video-item">
+                        <div class="video-wrapper" data-video-id="JGwWNGJdvx8">
+                            <div class="video-placeholder"
+                                style="background-image: url('https://img.youtube.com/vi/JGwWNGJdvx8/hqdefault.jpg');">
+                            </div>
+                            <div class="play-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <span class="video-badge">05</span>
+                        </div>
+                        <div class="video-details">
+                            <h4 class="video-title" data-i18n="video_title_5">CINEMATIC SHORT</h4>
+                            <p class="video-desc" data-i18n="video_desc_5">Experimental Narrative Film</p>
+                        </div>
+                    </div>
+                    <!-- 6. Behind the Scenes -->
+                    <div class="video-item">
+                        <div class="video-wrapper" data-video-id="kJQP7kiw5Fk">
+                            <div class="video-placeholder"
+                                style="background-image: url('https://img.youtube.com/vi/kJQP7kiw5Fk/hqdefault.jpg');">
+                            </div>
+                            <div class="play-button">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <span class="video-badge">06</span>
+                        </div>
+                        <div class="video-details">
+                            <h4 class="video-title" data-i18n="video_title_6">BEHIND THE SCENES</h4>
+                            <p class="video-desc" data-i18n="video_desc_6">Creative Process & Making Of</p>
                         </div>
                     </div>
                 </div>
@@ -266,6 +308,36 @@
             </div>
         </section>
 
+        <!-- CONTACT -->
+        <section class="section fade-in" id="contact">
+            <div class="contact-container">
+                <h2 class="section-title contact-title" data-i18n="contact_title">GET IN<br>TOUCH</h2>
+                <p class="contact-subtitle" data-i18n="contact_subtitle">Let's create something extraordinary together.
+                </p>
+                <form class="contact-form" action="https://formspree.io/f/maximza10@gmail.com" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name" data-i18n="contact_label_name">NAME</label>
+                            <input type="text" id="contact-name" name="name" required autocomplete="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" data-i18n="contact_label_email">EMAIL</label>
+                            <input type="email" id="contact-email" name="email" required autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject" data-i18n="contact_label_subject">SUBJECT</label>
+                        <input type="text" id="contact-subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message" data-i18n="contact_label_message">MESSAGE</label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="contact-submit" data-i18n="contact_btn_send">SEND MESSAGE</button>
+                </form>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="footer">
             <p class="credits" data-i18n="footer_text">Management & Design by Mysterik Producciones</p>
@@ -273,15 +345,12 @@
     </main>
 
     <!-- Scripts -->
-    <!-- 1. Three.js for 3D Background -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <!-- 2. GSAP for High-End Motion -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    <!-- 3. Local Logic -->
-    <script src="js/background3d.js"></script> <!-- New Particle Void -->
-    <script src="js/animations.js"></script> <!-- New Scroll Animations -->
+    <script src="js/background3d.js"></script>
+    <script src="js/animations.js"></script>
     <script src="js/main.js"></script>
 </body>
 
